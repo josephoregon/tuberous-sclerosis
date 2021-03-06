@@ -20,7 +20,7 @@ TSC can affect many different systems of the body, causing a variety of signs an
 
 Benign tumors are most common in the brain, kidneys, heart, lungs, and skin. Cancerous tumors are rare in TSC and those that do occur primarily affect the kidneys.
 
- <b>Three types of brain lesions are seen in TSC:/b>
+ <b>Three types of brain lesions are seen in TSC:</b>
 
 cortical tubers, for which the disease is named, generally form on the surface of the brain but may also appear in the deep areas of the brain
 subependymal nodules (SEN), which form in the walls of the ventricles—the fluid-filled cavities of the brain, and
