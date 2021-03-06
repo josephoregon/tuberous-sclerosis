@@ -1,2 +1,2 @@
 # tuberous-sclerosis
-I am performing side research for my son.
+## Self-motivated Research. For my son, Maui.
