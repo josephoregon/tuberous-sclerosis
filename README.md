@@ -1,2 +1,2 @@
 # tuberous-sclerosis
-## Self-motivated Research. For my son, Maui.
+### Self-motivated Research—for my son, Maui.
