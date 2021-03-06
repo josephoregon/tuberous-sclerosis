@@ -56,3 +56,5 @@ Other rare kidney problems include renal cell carcinoma, developing from an angi
 Lung lesions are present in about one-third of adult women with TSC and are much less commonly seen in men.  Lung lesions include lymphangioleiomyomatosis (LAM) and multinodular multifocal pneumocyte hyperplasia (MMPH).  LAM is a tumor-like disorder in which cells proliferate in the lungs, and there is lung destruction with cyst formation. A range of symptoms can occur with LAM, with many TSC individuals having no symptoms, while others suffer with breathlessness, which can progress and be severe. MMPH is a more benign tumor that occurs in men and women equally.
 
 </p>
+
+https://www.ninds.nih.gov/Disorders/Patient-Caregiver-Education/Fact-Sheets/Tuberous-Sclerosis-Fact-Sheet
