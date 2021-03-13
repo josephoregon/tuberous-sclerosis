@@ -12,6 +12,7 @@ import dash_bootstrap_components as dbc
 
 stylesheets = [dbc.themes.BOOTSTRAP]
 app = dash.Dash(__name__, external_stylesheets=stylesheets)
+server = app.server
 
 
 def main():
