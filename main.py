@@ -1,5 +1,5 @@
 """
-Fight-Tuberous-Sclerosis
+tuberous-sclerosis
 
 Author: JosephOregon https://github.com/josephoregon
 Project Notes: For my son, Maui.
@@ -15,10 +15,15 @@ app = dash.Dash(__name__, external_stylesheets=stylesheets)
 
 
 def main():
-    print('Hello World!')
+    header_title = """ For Maui. """
+    return header_title
 
 
-main()
+greetings = main()
+
+app.layout = html.Div(
+    greetings
+)
 
 if __name__ == "__main__":
     app.run_server(debug=True, dev_tools_props_check=False)
