@@ -5,11 +5,7 @@ Author: JosephOregon https://github.com/josephoregon
 Website: formaui.org
 Project Notes: For my son, Maui.
 """
-import os
-from boto.s3.connection import S3Connection
 import dash
-# import dash_core_components as dcc
-# dash-core-components==1.15.0
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 
@@ -17,12 +13,9 @@ stylesheets = [dbc.themes.BOOTSTRAP]
 app = dash.Dash(external_stylesheets=[dbc.themes.LUX])
 server = app.server
 
-# s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
-# 's3://for-maui-project/images/formaui-logo.png'
-
 app.title = 'For Our Maui.'
 
-maui_logo = 'assets/formaui-logo.extension'
+maui_logo = 'https://for-maui-project.s3.amazonaws.com/images/formaui-logo.png'
 
 
 def greetings():
