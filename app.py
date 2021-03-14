@@ -5,39 +5,29 @@ Author: JosephOregon https://github.com/josephoregon
 Website: formaui.org
 Project Notes: For my son, Maui.
 """
-
+import os
+from boto.s3.connection import S3Connection
 import dash
 # import dash_core_components as dcc
 # dash-core-components==1.15.0
 import dash_html_components as html
 import dash_bootstrap_components as dbc
-from dash.dependencies import Input, Output, State
 
 stylesheets = [dbc.themes.BOOTSTRAP]
 app = dash.Dash(external_stylesheets=[dbc.themes.LUX])
 server = app.server
 
+# s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
+# 's3://for-maui-project/images/formaui-logo.png'
+
 app.title = 'For Our Maui.'
 
-MAUI_LOGO = "assets/formaui-logo.png"
+maui_logo = 'assets/formaui-logo.extension'
 
 
 def greetings():
     return html.H1('For Maui.')
 
-
-search_bar = dbc.Row(
-    [
-        dbc.Col(dbc.Input(type="search", placeholder="Search")),
-        dbc.Col(
-            dbc.Button("Search", color="primary", className="ml-2"),
-            width="auto",
-        ),
-    ],
-    no_gutters=True,
-    className="ml-auto flex-nowrap mt-3 mt-md-0",
-    align="center",
-)
 
 navbar = dbc.Navbar(
     [
@@ -45,7 +35,7 @@ navbar = dbc.Navbar(
             # Use row and col to control vertical alignment of logo / brand
             dbc.Row(
                 [
-                    dbc.Col(html.Img(src=MAUI_LOGO, height="50px")),
+                    dbc.Col(html.Img(src=maui_logo, height="70px")),
                     dbc.Col(dbc.NavbarBrand("Tuberous Sclerosis Research", className="ml-2")),
                 ],
                 align="center",
@@ -53,11 +43,26 @@ navbar = dbc.Navbar(
             ),
             href="https://www.instagram.com/maui__strong/",
         ),
-        dbc.NavbarToggler(id="navbar-toggler"),
-        dbc.Collapse(search_bar, id="navbar-collapse", navbar=True),
     ],
-    color="dark",
+    color="#487e95",
     dark=True,
+)
+
+footer = dbc.Container(
+    dbc.Row(
+        dbc.Col(
+            html.P(
+                [
+                    html.Span('by Joseph Rosas, Data Scientist', className='mr-2'),
+                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:<you>@<provider>.com'),
+                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/<you>/<repo>'),
+                    html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/<you>/'),
+                    html.A(html.I(className='fab fa-twitter-square mr-1'), href='https://twitter.com/<you>'),
+                ],
+                className='lead'
+            )
+        )
+    )
 )
 
 app.layout = html.Div([
@@ -66,18 +71,10 @@ app.layout = html.Div([
     # greetings(),
     html.H6('Recommended Links'),
     html.A('Tuberous Sclerosis Warrior 💪🏽', href='https://www.instagram.com/maui__strong/', target='_blank'),
-    html.Br()  # ,
-    # html.A('Ketogenic Diet and Hypothalamic Hamartomas', href='https://www.whitneyerd.com/2020/07/vegan-plant-based'
-    #                                                         '-ketogenic-diet.html', target='_blank')
+    footer
 ])
 
 
-# add callback for toggling the collapse on small screens
-@app.callback(
-    Output("navbar-collapse", "is_open"),
-    [Input("navbar-toggler", "n_clicks")],
-    [State("navbar-collapse", "is_open")],
-)
 def toggle_navbar_collapse(n, is_open):
     if n:
         return not is_open
