@@ -35,9 +35,9 @@ navbar = dbc.Navbar(
             href="https://www.instagram.com/maui__strong/",
         ),
         dbc.Row(
-                html.H6(
-                    'by Joseph Rosas, Data Scientist', id='nav-bar'
-                )
+            html.H6(
+                'by Joseph Rosas, Data Scientist', id='nav-bar'
+            )
         )
     ],
     color="#487e95",
