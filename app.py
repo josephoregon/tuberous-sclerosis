@@ -1,9 +1,8 @@
 """
-tuberous-sclerosis
-
-Author: JosephOregon https://github.com/josephoregon
-Website: formaui.org
-Project Notes: For my son, Maui.
+project: tuberous-sclerosis
+author: Joseph Rosas
+website: formaui.org
+description: For my son, Maui.
 """
 import dash
 import dash_bootstrap_components as dbc

@@ -1,5 +1,6 @@
-dash==1.19.0
-dash-html-components==1.1.2
-dash-bootstrap-components==0.11.3
-gunicorn==20.0.4
-boto==2.49.0
+dash
+dash-html-components
+dash-bootstrap-components
+gunicorn
+boto
+streamlit
