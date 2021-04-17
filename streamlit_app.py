@@ -14,7 +14,8 @@ st.set_page_config(
 )
 
 # TITLE & INFO
-st.title("Tuberous Sclerosis—Nutritional Assistance ☤")
+st.title("TSC Nutritional Assistance ☤")
+st.write("Tuberous Sclerosis Complex (TSC)")
 st.markdown("---")
 st.write('_Research dedicated to my son, Maui ꐠ — and others affected by TS._')
 st.markdown("[_by Joseph Rosas, Data Scientist_]" "(https://www.linkedin.com/in/josephrosas/)")
