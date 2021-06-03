@@ -4,6 +4,7 @@ author: Joseph Rosas
 website: formaui.org
 description: For my son, Maui.
 """
+
 import dash
 import dash_bootstrap_components as dbc
 import dash_html_components as html
@@ -48,10 +49,10 @@ intro_paragraph = html.Div([
     html.Div([
         dcc.Markdown('''
         **SUMMARY:** Self-dedicated research for my son, Maui and all those affected by tuberous-sclerosis (TSC).
-        
+
         As my incredible wife continues promoting TSC awareness by using her writing skills, 
         she inspires me to dedicate a part of my life towards the same purpose.
-        
+
         '''),
         html.Br(),
         html.Br(),
